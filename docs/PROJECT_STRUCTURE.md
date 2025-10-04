@@ -60,12 +60,6 @@ app/
 │   ├── user.rb
 │   └── concerns/         # Model concerns/mixins
 │
-├── serializers/          # JSON API serializers
-│   ├── budget_serializer.rb
-│   ├── category_serializer.rb
-│   ├── transaction_serializer.rb
-│   └── user_serializer.rb
-│
 └── views/                # View templates (minimal for API)
     └── layouts/
         └── application.html.erb
@@ -314,7 +308,6 @@ docs/
 bin/
 ├── rails               # Rails command runner
 ├── rake                # Rake task runner
-├── setup              # Project setup script
 ├── update             # Project update script
 ├── spring             # Spring preloader
 └── bundle             # Bundler wrapper
@@ -483,7 +476,7 @@ bin/
 
 ---
 
-## Adding New Features
+## Adding New Features (Preferred)
 
 ### Adding a New Backend Resource
 
@@ -578,7 +571,6 @@ bin/
 
 1. **Keep controllers thin** - Move business logic to models or services
 2. **Use concerns for shared code** - DRY principle
-3. **Write tests first** - TDD approach
 4. **Use serializers consistently** - Maintain API contract
 5. **Follow Rails conventions** - Predictable structure
 
@@ -603,20 +595,6 @@ bin/
    - Clear, descriptive names
    - Follow React conventions
    - Consistent file naming
-
----
-
-## File Size Guidelines
-
-### Backend
-- **Controllers**: < 200 lines (extract to services if larger)
-- **Models**: < 300 lines (use concerns for shared logic)
-- **Specs**: No limit (comprehensive testing)
-
-### Frontend
-- **Components**: < 200 lines (split into smaller components)
-- **Services**: < 150 lines per service
-- **Hooks**: < 100 lines (focused, single-purpose)
 
 ---
 
@@ -681,42 +659,6 @@ npm install
 ### Protected by .gitignore
 
 The `.gitignore` file ensures sensitive and temporary files are never committed to the repository.
-
----
-
-## Quick Reference
-
-### Find Files by Purpose
-
-| Purpose | Location |
-|---------|----------|
-| API Routes | `config/routes.rb` |
-| Database Schema | `db/schema.rb` |
-| Models | `app/models/` |
-| Controllers | `app/controllers/api/v1/` |
-| React Components | `client/src/components/` |
-| API Services | `client/src/services/` |
-| Tests (Backend) | `spec/` |
-| Tests (Frontend) | `client/src/**/*.test.js` |
-| Configuration | `config/` |
-| Documentation | `docs/` |
-
-### Common Commands
-
-```bash
-# Backend
-rails routes                    # View all routes
-rails db:migrate               # Run migrations
-rails db:seed                  # Seed database
-rails console                  # Rails console
-bundle exec rspec              # Run tests
-
-# Frontend
-cd client
-npm start                      # Start dev server
-npm test                       # Run tests
-npm run build                  # Production build
-```
 
 ---
 
