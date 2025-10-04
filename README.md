@@ -1,6 +1,6 @@
 # SpendWise 
 
-A comprehensive personal finance management application that empowers users to take control of their financial health through intelligent expense tracking, budget management, and goal setting.
+A comprehensive personal finance management application that empowers users to take control of their finance health through intelligent expense tracking, budget management, and goal setting.
 
 ![SpendWise](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
