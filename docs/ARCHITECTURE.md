@@ -611,10 +611,10 @@ API versioned via URL path: `/api/v1/`
 
 ```
 Developer Machine
-├── Rails API (Port 3000)
-│   └── PostgreSQL (Port 5432)
-└── React Dev Server (Port 3001)
-    └── Proxies API requests to :3000
+├── Rails API
+│   └── PostgreSQL
+└── React Dev Server
+    └── Proxies API requests
 ```
 
 ### Testing Strategy
