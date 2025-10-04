@@ -143,14 +143,14 @@ spendwise/
 ├── app/
 │   ├── controllers/
 │   │   ├── application_controller.rb
-│   │   ├── users/
-│   │   │   ├── sessions_controller.rb      # Login/Logout
-│   │   │   └── registrations_controller.rb # Signup
-│   │   └── api/
-│   │       └── v1/
-│   │           ├── budgets_controller.rb
-│   │           ├── transactions_controller.rb
-│   │           └── categories_controller.rb
+│   │   ├── users
+│   │   |── api/
+│   │     
+│   │   
+│   │       
+│   │      
+│   │           
+│   │           
 │   │
 │   ├── models/
 │   │   ├── user.rb                # User model with Devise
@@ -158,10 +158,10 @@ spendwise/
 │   │   ├── transaction.rb         # Transaction model
 │   │   └── category.rb            # Category model
 │   │
-│   ├── serializers/
-│   │   ├── budget_serializer.rb
-│   │   ├── transaction_serializer.rb
-│   │   └── category_serializer.rb
+│   |
+│   │  
+│   │   
+│   │   
 │   │
 │   └── services/                  # Business logic services
 │       └── (future service objects)
@@ -212,7 +212,7 @@ spendwise/
 
 ## Frontend Architecture
 
-### React Application Structure
+### React Application Structure (Preferred File Structure & Naming)
 
 ```
 client/
@@ -617,7 +617,7 @@ Developer Machine
     └── Proxies API requests
 ```
 
-### Testing Strategy
+### Testing Strategy (In best practice)
 
 1. **Backend Testing**
    - Model specs (validations, associations)
