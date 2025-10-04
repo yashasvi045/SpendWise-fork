@@ -356,39 +356,6 @@ bin/
 
 ---
 
-## Important Directories Explained
-
-### `/tmp` - Temporary Files
-- Cache files
-- Session data
-- PID files
-- Development server state
-- **Not committed to Git**
-
-### `/log` - Application Logs
-- `development.log` - Development environment logs
-- `test.log` - Test environment logs
-- `production.log` - Production environment logs
-- **Not committed to Git**
-
-### `/public` - Static Assets
-- Directly accessible files
-- Error pages (404, 500)
-- Compiled assets in production
-- robots.txt
-
-### `/storage` - Active Storage Files
-- Uploaded files in development
-- Disk service storage
-- **Not committed to Git**
-
-### `/vendor` - Third-party Code
-- Vendored gems
-- External libraries
-- Usually auto-generated
-
----
-
 ## Environment-Specific Files
 
 ### Development
@@ -410,7 +377,7 @@ bin/
 
 ---
 
-## Data Flow Through Project Structure
+## System Design Format
 
 ### API Request Flow
 
