@@ -356,24 +356,6 @@ bin/
 
 ---
 
-## File Naming Conventions
-
-### Backend (Rails)
-
-- **Controllers**: `snake_case_controller.rb` (e.g., `budgets_controller.rb`)
-- **Models**: `snake_case.rb` (e.g., `budget.rb`)
-- **Serializers**: `snake_case_serializer.rb` (e.g., `budget_serializer.rb`)
-- **Tests**: `snake_case_spec.rb` (e.g., `budget_spec.rb`)
-
-### Frontend (React)
-
-- **Components**: `PascalCase.jsx` (e.g., `BudgetList.jsx`)
-- **Services**: `camelCase.js` (e.g., `budgetService.js`)
-- **Hooks**: `useCamelCase.js` (e.g., `useAuth.js`)
-- **Utilities**: `camelCase.js` (e.g., `helpers.js`)
-
----
-
 ## Important Directories Explained
 
 ### `/tmp` - Temporary Files
